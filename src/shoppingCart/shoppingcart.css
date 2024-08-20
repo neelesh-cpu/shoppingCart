@@ -1,0 +1,31 @@
+.header {
+  background-color: rgb(30 41 59);
+  height: 80px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header h2 {
+  color: white;
+}
+
+form {
+  flex: 0 1 30%;
+}
+form input {
+  padding: 10px 8px;
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+  border: 0;
+  transition: all 0.5s;
+}
+input:focus {
+  transform: translateY(-2px);
+}
+.dropdowns {
+  display: flex;
+  background-color: greenyellow;
+}

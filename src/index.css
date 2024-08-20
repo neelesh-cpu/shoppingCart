@@ -1,13 +1,275 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  border-bottom: 1px solid #3c3c3c;
+  color: #ddd;
+}
+
+.cryptoLogo {
+  cursor: pointer;
+  width: 140px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.navbar li {
+  cursor: pointer;
+}
+
+.navbar select {
+  background-color: #09005c;
+  color: white;
+  padding: 4px 8px;
+  border: 1px solid white;
+  margin-right: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.nav-right {
+  display: flex;
+}
+
+.navbar button {
+  border: none;
+  outline: none;
+  color: #393939;
+}
+.btn-signup {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  padding: 8px 22px;
+  gap: 4px;
+  cursor: pointer;
+
+  border-radius: 50px;
+}
+
+.arrowimg {
+  width: 10px;
+}
+.hero {
+  padding: 0 10px;
+ 
+}
+.home {
+  margin: 80px auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 22px;
+}
+
+.hero-para {
+  color: #e3e3e3;
+  line-height: 1.5;
+}
+
+.forms {
+  padding: 8px;
+  width: 70%;
+
+  display: flex;
+  align-items: center;
+
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .forms {
+    padding: 8px;
+    width: 80%;
+  }
+}
+
+.inputbox {
+  flex: 1;
+  padding: 10px 20px;
+
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: black;
+}
+
+.btn-search {
+  background-color: #09005c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.crypto-table {
+  margin: auto;
+  max-width: 800px;
+  background: linear-gradient(rgba(84, 3, 255, 0.25), rgba(205, 2, 153, 0.15));
+  border-radius: 10px;
+}
+
+.table-layout {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr;
+  padding: 15px 20px;
+  align-items: center;
+  border-bottom: 1px solid #3c3c3c;
+}
+
+.coins {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+.coin-img {
+  width: 20px;
+}
+
+.green {
+  color: #00d515;
+  text-align: center;
+}
+
+.red {
+  color: #ff4646;
+  text-align: center;
+}
+
+.footer {
+  margin-top: 30px;
+  
+  text-align: center;
+  padding: 18px 20px;
+  font-size: 16px;
+  border-top: 0.5px solid #989898;
+}
+
+@media (max-width: 900px) {
+  .navbar ul {
+    display: none;
+  }
+  .cryptoLogo {
+    width: 100px;
+  }
+  .nav-right button {
+  }
+}
+
+@media (max-width: 900px) {
+  .table-layout {
+    grid-template-columns: 0.5fr 3fr 1fr 1fr;
+  }
+
+  .table-layout .market-cap {
+    display: none;
+  }
+}
+
+*/
+
+/*-------------TodoList---------------------------*/
+
+.app {
+  background-color: rgb(28 25 23);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.hero {
+  width: 450px;
+  min-height: 450px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px 40px;
+}
+
+.todolist-header {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.todolist-header > h1 {
+  font-size: 25px;
+}
+
+.todolistimg {
+  width: 10%;
+}
+
+.inputbox {
+  background-color: rgb(226 232 240);
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.input {
+  background: transparent;
+  padding: 6px 18px;
+  height: 45px;
+  outline: none;
+  border: 0;
+  flex: 1;
+}
+
+.input ::placeholder {
+  color: rgb(71 85 105);
+}
+
+.btn {
+  border: 0;
+  outline: none;
+  background-color: rgb(234 88 12);
+  color: white;
+  height: 45px;
+  width: 20%;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.todo {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.todo-list {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.image {
+  width: 20px;
+  cursor: pointer;
+}
+
+.todo-list p {
+  margin-left: 20px;
 }
