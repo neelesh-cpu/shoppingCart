@@ -4,16 +4,7 @@ import { FaShoppingCart } from "react-icons/fa";
 const Header = () => {
   return (
     <header className="header">
-      <h2>ShoppingCart</h2>
-      <form>
-        <input type="text" placeholder="Search a Product" />
-      </form>
-      <div className="dropdowns">
-        <FaShoppingCart />
-        <select>
-          <option value="fruit">11</option>
-        </select>
-      </div>
+      <h2>Header added in navigation branch</h2>
     </header>
   );
 };
